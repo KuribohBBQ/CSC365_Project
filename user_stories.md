@@ -10,7 +10,7 @@ User Stories:
 9. As an enthusiastic script writer, I want to store my various scripts and variations in a database so that I always have the correct one for a given group or occasion.
 10. As a lover of instigating my friends into raging and crashing out, I want to easily able to create chaotic scenarios that will turn my friends into quality content to watch
 11. As a someone who plays RPGs a lot, I want a system that organizes the countless variables of a characters into tables so that it is easy to read
-12.
+12. As an unexperienced player, I want to remain passive so that I can stay in the game for a longer time. 
 
 Possible Exception Cases:
 1. If a user tries to run a game with more/fewer roles put in than the amount of AI players, then the interface will give an error back to the user and prompt them to remove/add roles.
