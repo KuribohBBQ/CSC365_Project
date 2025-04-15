@@ -5,8 +5,8 @@ User Stories:
 4. As a script writer, I want to see how the addition of a character (such as the Slayer) to my custom script can alter the balance of the game so that I can decide whether to actually implement it or not.
 5. As a social and humorous gamer, I want to create ridiculous scenarios and memes within the system so that I can humor myself and my friends.
 6. As an experimental and inventive game designer, I want to see how far I can push the limits of the system in hopes of creating a completely unrecognizable and new but still playable and entertaining experience.
-7. 
-8.
+7. As a strategic player, I want to compare the win rates of my in-person group and the AI simulation of the same scripts so that I can see if a random-choice strategy is viable.
+8. 
 9.
 10.
 11.
