@@ -21,9 +21,7 @@ Possible Exception Cases:
 6. If a user tries to add the same role to a script twice, the script editor will check to see if the role already exists and either return an error or refuse to make the change.
 7. If a user tries to run a game with a valid script but too many bots to distribute unique roles to, then the game will prompt the player to add less bots.
 8. If an unhandled exception causes a simulated game to take too long/never end, the game will end itself and return an error.
-9.
-10.
-11.
-12.
-13.
-14.
+9. If an AI is put in a situation to make a choice/action it is unable to do, the game will end and return an error.
+10. If an AI is assigned two contradictory roles, the interface will query the user to pick only one.
+11. If both teams achieve their win conditions simultaneously, the game will probably return an error. Or a draw, if properly handled.
+12. If a user tries to edit a script while a corresponding game is running, the game will probably end abruptly and return an error.
