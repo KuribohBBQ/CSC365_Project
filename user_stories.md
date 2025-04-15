@@ -8,7 +8,7 @@ User Stories:
 7. As a strategic player, I want to compare the win rates of my in-person group and the AI simulation of the same scripts so that I can see if a random-choice strategy is viable.
 8. As a sandbox gamer, I want to watch the AI play games for me so that I can enjoy the (completely simulated) hijinx of (not) social deduction as a spectator.
 9. As an enthusiastic script writer, I want to store my various scripts and variations in a database so that I always have the correct one for a given group or occasion.
-10. 
+10. As a lover of instigating my friends into raging and crashing out, I want to easily able to create chaotic scenarios that will turn my friends into quality content to watch
 11.
 12.
 
