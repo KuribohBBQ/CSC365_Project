@@ -3,12 +3,34 @@ Script Listing Page
 
 1.1. List/Search scripts - /listing/search/ (READ)
 	Displays the generic search page for all of the listings, and also be able to be applied to only return specific a specific listing based on search parameters. Just listing every available script should require no parameters. 
+ Response:  
+ [ {	"script_id": "string", 
+	"script_name": "string", 
+ 	"script_characters :"string", 
+   	"description": "null"
+} ]
 
 1.2. Add a new script to database - /listing/add/ (WRITE)
   Creates a new script in the database with a unique id, name, character list, and (optional) text description. 
+Request: 
+  [ {"script_id": "string", /*Unique*/
+  "script_name": "string",
+  "script_characters": ["character_names"].
+  "description": "null" /* Default value is null. */
+  } ]
+Response: 
+	{ "script_id":"string"} /*Will be used to find sript*/
 
 1.3. Edit an existing script - /listing/edit/ (WRITE)
   Lets you change the name, character list, or description of a given script.
+Request: 
+[{ {"script_id": "string", /*Unique*/
+  "script_name": "string",
+  "script_characters": ["character_names"].
+  "description": "null" /* Default value is null. */
+  } ]
+Response:
+	{ "success":boolean} 
 
 1.4. Rate script - /listing/rate/ (WRITE)
   On the listing page, all of the scripts will have a rating attribute. This can increment or decrement the total by one. 
