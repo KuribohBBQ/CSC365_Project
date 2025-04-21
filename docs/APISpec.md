@@ -1,8 +1,7 @@
 API Specifications:
-1. Script Listing Page
-
+Script Listing Page
 1.1. List/Search scripts - /listing/search/ (READ)
-  Displays the generic search page for all of the listings, and also be able to be applied to only return specific a specific listing based on search parameters. Just listing every available script should require no parameters. 
+	Displays the generic search page for all of the listings, and also be able to be applied to only return specific a specific listing based on search parameters. Just listing every available script should require no parameters. 
 1.2. Add a new script to database - /listing/add/ (WRITE)
   Creates a new script in the database with a unique id, name, character list, and (optional) text description. 
 1.3. Edit an existing script - /listing/edit/ (WRITE)
@@ -14,8 +13,7 @@ API Specifications:
 1.6. Download script - /listing/download/ (READ)
   Downloads a text file containing the characters and name of the script, to import and use on other sites.
 
-2. Script Compostion Tool
-
+Script Compostion Tool
 2.1. Create a composition of available characters - /script/choose/ (WRITE)
   Selects a specific amount of characters from a given list and saves them as a composition (in a new table) that can be accessed by the other commands.
 2.2. Run step-by-step example game with AI - /script/runwithai/ (READ)
