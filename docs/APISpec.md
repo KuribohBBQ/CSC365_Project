@@ -22,7 +22,7 @@ Script Listing Page
   	  {
      	"script_id": "integer", /* starts at 1 and increments by 1*/
 	 	"script_name": "string", /*Unique*/
-  		"script_characters": ["character_names"].
+  		"script_characters": ["character_names"],
   		"description": "null" /* Default value is null. */
   	  } 
   	]
@@ -37,7 +37,7 @@ Script Listing Page
  	  {
     	"script_id": "integer"
   		"script_name": "string", /*Unique*/
-  		"script_characters": ["character_names"].
+  		"script_characters": ["character_names"],
   		"description": "null" /* Default value is null. */
   	  } 
   	]
@@ -48,21 +48,39 @@ Script Listing Page
   On the listing page, all of the scripts will have a rating attribute. This can increment or decrement the total by one. 
 
   	Request:
-   	[
-    	  { 
-       	"script_name: "string" 
-       		"rating": "integer" /* integer must be 1. */
-	 	"positive: "boolean" /* if true then increment. Decrease if false */
-         }
-	]
+	[  
+ 	  {
+    	"script_name": "string", 
+  		"rating": "integer", /* Must be 1 */
+  		"positive": "boolean" /* Increment if true. */
+  	  } 
+  	]
+ 
  	Response:
   	[
    	  {
-	"script_rating": "integer" /* Increment or Decrease depending on boolean value	
+		"script_rating": "integer" /* Increment or Decrease depending on boolean value	
       	  }
 	]
 1.5. Select script to examine - /listing/examine/ (GET)
   On the main listing page, the descriptions and full character lists aren't going to be visible. By examining, the user should be able to go into a different page that displays the relevant information about that script and allows them to directly access the script compostion tool from there.
+	
+ 	Request:
+ 	[  
+ 	  {
+		"script_name": "string"
+   	  }
+	]
+  	Response: 
+	[  
+ 	  {
+    	"script_id": "integer"
+  		"script_name": "string", /*Unique*/
+  		"script_characters": ["character_names"],
+  		"description": "null", /* Default value is null. */
+    	"script_rating":"integer"
+  	  } 
+  	]
 
 1.6. Download script - /listing/download/ (GET)
   Downloads a text file containing the characters and name of the script, to import and use on other sites.
