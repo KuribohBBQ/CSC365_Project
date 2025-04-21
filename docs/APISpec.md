@@ -7,7 +7,7 @@ Script Listing Page
  	Response:  
  	[ 
   	  {
-     		"script_id": "string", 
+     	"script_id": "string", 
 		"script_name": "string", 
  		"script_characters :"string", 
    		"description": "null"
@@ -20,8 +20,8 @@ Script Listing Page
 	Request: 
   	[ 
   	  {
-     		"script_id": "string", /*Unique*/
-	 	"script_name": "string",
+     	"script_id": "integer", /* starts at 1 and increments by 1*/
+	 	"script_name": "string", /*Unique*/
   		"script_characters": ["character_names"].
   		"description": "null" /* Default value is null. */
   	  } 
@@ -35,8 +35,8 @@ Script Listing Page
  	Request: 
 	[  
  	  {
-    		"script_id": "string", /*Unique*/
-  		"script_name": "string",
+    	"script_id": "integer"
+  		"script_name": "string", /*Unique*/
   		"script_characters": ["character_names"].
   		"description": "null" /* Default value is null. */
   	  } 
@@ -47,6 +47,20 @@ Script Listing Page
 1.4. Rate script - /listing/rate/ (POST)
   On the listing page, all of the scripts will have a rating attribute. This can increment or decrement the total by one. 
 
+  	Request:
+   	[
+    	  { 
+       	"script_name: "string" 
+       		"rating": "integer" /* integer must be 1. */
+	 	"positive: "boolean" /* if true then increment. Decrease if false */
+         }
+	]
+ 	Response:
+  	[
+   	  {
+	"script_rating": "integer" /* Increment or Decrease depending on boolean value	
+      	  }
+	]
 1.5. Select script to examine - /listing/examine/ (GET)
   On the main listing page, the descriptions and full character lists aren't going to be visible. By examining, the user should be able to go into a different page that displays the relevant information about that script and allows them to directly access the script compostion tool from there.
 
