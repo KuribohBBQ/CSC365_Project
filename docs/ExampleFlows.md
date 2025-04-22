@@ -13,3 +13,6 @@ Randal, an expierenced player, wants to keep track of all the scripts of charact
 - Call GET/ scripts/125 to pull up the character listings
 - Call POST /scripts/125/rate and gives a rating to the Monk
 - Repeat process with other roles he's played with
+
+Bobby, an ethusiastic script writer, wants all his written scripts to be stored in a database. He wants to give them a unique name so that he can access them them depending on the situation. 
+- Call 
