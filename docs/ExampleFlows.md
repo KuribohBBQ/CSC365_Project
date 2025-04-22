@@ -8,4 +8,8 @@ To do so, he needs to:
  - Call POST /compositions/12/stats to return the average game stats.
  - Call GET /scripts/138/download which downloads the script to his computer.
 
-
+Randal, an expierenced player, wants to keep track of all the scripts of characters/roles he's played so far by how good they are. The best way to do that is giving them ratings so that next time he plays, he'll pick the script with the best ratings, or maybe the lowest ratings if he wants to go easy on new players. First, he'll search for the scripts he's played with, then rate them
+- Call GET /scripts and put in the ID for the script he's previously played with. Let's say the character he's played before is Monk, and it's character ID is 125
+- Call GET/ scripts/125 to pull up the character listings
+- Call POST /scripts/125/rate and gives a rating to the Monk
+- Repeat process with other roles he's played with
