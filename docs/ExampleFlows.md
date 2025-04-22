@@ -14,5 +14,9 @@ Randal, an expierenced player, wants to keep track of all the scripts of charact
 - Call POST /scripts/125/rate and gives a rating to the Monk
 - Repeat process with other roles he's played with
 
-Bobby, an ethusiastic script writer, wants all his written scripts to be stored in a database. He wants to give them a unique name so that he can access them them depending on the situation. 
-- Call 
+Bobby, an ethusiastic script writer, wants all his written scripts to be stored in a database. He wants to give them a unique name so that he can access them them depending on the situation.
+Bobby want to create a script name "Spooky", with a list of 5 ghost characters. After a while he wanted to add a description to his script. 
+- Call GET scripts/ "Spooky" to make sure your script has a unique name. 
+- Call POST /scripts/add and in all info. Lets assume this is the first script"Spooky", [Boo, Casp, Shro, Poka, Low]
+- Call PUT /script/1/edit Here a scary description will be added to the Spooky script
+  
